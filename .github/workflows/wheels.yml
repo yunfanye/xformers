@@ -28,14 +28,10 @@ jobs:
       matrix:
         os:
           - ubuntu-22.04
-          - windows-2019
         python:
-          - "3.7"
           - "3.8"
-          - "3.9"
-          - "3.10"
         config:
-          - torch_version: "1.13.1+cu117"
+          - torch_version: "1.13.1+cu116"
             torch_version_constraint: "1.13.1"
             cuda_version: "11.7.1"
             pip_index: https://download.pytorch.org/whl/cu117
